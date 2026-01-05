@@ -1,0 +1,238 @@
+@import url('reset.css');
+
+/* GLOBAL */
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	background: #0C151D;
+	color: #fff;
+}
+
+.container {
+	width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title {
+	font-size: 37px;
+	text-transform: uppercase;
+}
+
+/* HEADER */
+.about-me-title {
+
+
+	margin-bottom: 30px;
+}
+.footer {
+
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 22px;
+}
+.container-and {
+	
+		line-height: 33px;
+		color: #0C151D;
+		font-size: 22px;
+}
+
+.about {
+		 text-align: center;
+		 background-color: #24A9EB;
+		 color: #0C151D;
+		 padding: 40px 264px;
+}
+.header {
+	padding: 46px 0 47px;
+	font-size: 22px;
+}
+
+.header-container {}
+
+.header-logo {
+	float: left;
+}
+
+.header-logo,
+.header-link {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-list {
+	float: right;
+	font-size: 0;
+}
+
+.header-item {
+	display: inline-block;
+	font-size: 22px;
+}
+
+.header-item+.header-item {
+	margin-left: 40px;
+}
+
+/* HERO */
+
+.btn-1 {
+
+	margin-right: 40px;
+}
+
+.btn {
+
+	width: 290px;
+	height: 80px;
+	font-weight: 500;
+	font-size: 22px;
+	color: #0C151D;
+	background-color: #24A9EB;
+	border-radius: 10px;
+}
+
+.buttons-container {
+
+	margin-top: 47px;
+}
+
+.cell-3 {
+
+	width: 119px;
+}
+.cell-2 {
+
+	width: 125px;
+	margin: 0 85px;
+}
+
+.cell-1 {
+
+	width: 148px;
+}
+.cell-1, .cell-2, .cell-3 {
+
+	display: inline-block;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 36px;
+	text-align: center;
+	
+}
+
+.file-resume {
+
+	padding: 20px 31px ;
+	margin-top: 50px;
+}
+
+.links-list .last-4 {
+
+	margin-right: 0;
+}
+
+.links-list .first-1 {
+
+	margin-left: 0;
+
+}
+
+.links-list li {
+
+	display: inline-block;
+	margin: 0px 13px;
+
+}
+
+.links-list {
+
+	margin-top: 12px;
+}
+
+.link {
+
+	width: 36px;
+	height: 36px;
+}
+
+.profile-data {
+
+	width: 474px;
+	padding: 0;
+}
+
+.text-name{
+
+	float: right;
+	padding-top: 30px;
+
+}
+.name {
+
+	font-size: 46px;
+	font-weight: 500;
+	line-height: 69px;
+}
+
+.text-name p {
+
+	margin-top: 3px;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 33px;
+}
+
+.hero-container {
+
+	width: 634px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.profile-img{
+
+	float: left;
+	width: 205px;
+	height: 205px;
+	border-radius: 100%;
+	border: 5px solid #24A9EB
+}
+
+/* PORTFOLIO */
+.portfolio {
+	padding: 50px 0 70px;
+}
+
+.portfolio-title {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.portfolio-cards {
+	margin: 0 -15px;
+}
+
+.portfolio-card {
+	height: 226px;
+	width: 33.33334%;
+	float: left;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.portfolio-card img {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	object-fit: cover;
+}
