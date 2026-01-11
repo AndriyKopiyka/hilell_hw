@@ -47,6 +47,113 @@
 
 
 /*-------*/
+
+.line-three {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 94px;
+
+}
+
+.line-two {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 30px;
+}
+
+
+.container-card p {
+    line-height: 30px;
+    margin-top: 4px;
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+.container-card h3 {
+    padding-top: 20px;
+    padding-left: 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.line-one {
+    padding-top: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.btn-filter {
+      font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+    padding: 6px 25px;
+    background-color: #F5F4FA;
+    border: none;
+    line-height: 26px;
+    border-radius: 4px;
+}
+.btn-filter.active {
+    color: #FFFFFF;
+    background-color: #2196F3;
+
+}
+
+
+.container-key {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    
+}
+
+.centr-box {
+   
+    padding-top: 94px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .number a:hover {
 
     color: #2196F3;
@@ -146,14 +253,6 @@
 
 }
 
-
-
-
-
-
-
-
-
 .doing {
     margin:0 auto;
     margin-bottom: 50px;
@@ -173,8 +272,9 @@
 .pictures {
 
     display: flex;
-    justify-content: space-between;
-    padding: 0 215px 94px;
+    justify-content: center;
+    padding: 0 0px 94px;
+    gap: 30px;
 
 }
 
