@@ -125,3 +125,7 @@ table {
 	clear: both;
 	display: block;
 }
+
+button {
+	cursor: pointer;
+}
