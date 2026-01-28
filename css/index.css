@@ -23,9 +23,9 @@ body {
 
 
 
-/* .info-1 {
+.info-1 {
     margin-right: 50px;
-} */
+}
 
 .m-portfomlio,
 .m-studio,
@@ -66,6 +66,36 @@ body {
     margin-right: -1px;
     display: none;
 }
+
+
+
+
+
+
+
+.clas-marketing {
+
+    position: relative;
+}
+.class-marketing:hover .class-window {
+     
+    display: block;
+}
+.class-window {
+    position: absolute;
+    left: 100%;
+     background: white;
+     display: none;
+    top: 70%;
+}
+
+
+
+
+
+
+
+
 .last-item:hover .menu-contacts {
     display: block;
 }
@@ -86,10 +116,10 @@ body {
       border-top: 1px solid #ECECEC;
 }
 
-/* 
+
 .contacts {
     margin-left: auto;
-} */
+}
 
 
 .header {
