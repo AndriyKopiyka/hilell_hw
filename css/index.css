@@ -8,6 +8,13 @@ body {
     margin: 0 auto;
 }
 
+.heading {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 /* Шапка */
 
 .header a {
@@ -133,6 +140,91 @@ header {
 }
 
 
+
+
+
+
+
+
+
+
+
+/* Regular customers section */
+
+
+.custom {
+    padding: 94px 0;
+
+}
+
+.cards-custom {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+}
+
+.card-custom {
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+}
+
+.card-custom:hover {
+
+    border-color: #2196F3;
+}
+.card-custom:hover .card-custom-svg {
+
+    fill: #2196F3;
+}
+
+.card-custom-svg {
+    margin: auto;
+    fill: #AFB1B8;
+}
+.social-list {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.social-list a {
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+}
+.social-list a:hover {
+    background-color: #2196F3;
+
+}
+.social-list a:hover .social-svg {
+    fill: white;
+}
+
+.social-svg {
+
+       fill: #AFB1B8;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /*-------*/
 
 /* Footer */
@@ -175,26 +267,52 @@ header {
     margin-bottom: 20px;
 }
 
-.inform-container {
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 .inform {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #2F303A;
+}
+
+.container-footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
 }
+.social-list-wrapper{
+    margin-left: 129px;
+}
+.heading-footer {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+
+.social-list-footer {
+
+padding-bottom: 0px;   
+}
+
+.social-list-footer a {
+
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
 
 /*-------*/
 
 /* Main page: First section */
 
 .title {
-   background-color: #2F303A; 
-   padding-top: 200px;
+    background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
+    background-size: cover;
+    padding-top: 200px;
    padding-bottom: 200px;
    color: #FFFFFF;
 }
@@ -235,41 +353,63 @@ header {
     text-transform: uppercase;
 }
 
-.div-4 {
-    font-weight: 400;
-    line-height: 24px;
-    color: #757575;
-}
 
-.div-3 {
-    margin-right: 30px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #757575;
-}
-
-.div-2 {
-    margin-right: 30px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #757575;
-}
-
-.div-1 {
-    margin-right: 30px;
+.card-column {
+    width: 270px;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: #757575;
 
 }
+
+.card-column-bg {
+
+    background-color: rgba(245, 244, 250, 1);
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px;
+
+}
+
+.card-column:first-child .card-column-bg {
+    background-image: url(../img/antenna.svg);
+  
+}
+
+.card-column:nth-child(2) .card-column-bg {
+    background-image: url(../img/timer.svg);
+   
+}
+.card-column:nth-child(3) .card-column-bg {
+    background-image: url(../img/diagram.svg);
+  
+}
+
+.card-column:last-child .card-column-bg {
+    background-image: url(../img/astronaut.svg);
+    
+}
+
+
 
 .column {
     display: flex;
-    padding: 94px 215px;
+    padding: 94px 0;
+    gap: 30px;
 }
+
+
+
+
+
+
+
+
+
 
 /* Main page: 3d section */
 
@@ -313,7 +453,7 @@ header {
 }
 
 .card p {
-    padding: 10px 0 30px;
+    padding: 10px 0 16px;
     font-size: 16px;
     text-align: center;
     color: #757575;
@@ -325,14 +465,6 @@ header {
     font-weight: 700;
     text-align: center;
     color: #212121;
-}
-
-.heading {
-
-    font-weight: 700 ;
-    font-size: 36px;
-    margin-bottom: 50px;
-    text-align: center;
 }
 
 .foto-real {
