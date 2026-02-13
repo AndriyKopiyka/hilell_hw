@@ -1,0 +1,214 @@
+@import "reset.css";
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+.class-bground {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(22, 21, 21, 0.25)), url(../img/bground.jpg);
+    background-size: cover;
+    display: flex;
+
+}
+
+.class-input {
+    overflow: auto;
+    width: 496px;
+    margin-left: auto;
+    background-color:rgba(233, 233, 233, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 78px;
+}
+
+.class-swich {
+    border: 1px solid #325480;
+    width: 100%;
+    border-radius: 30px;
+    height: 36px;
+    padding: 2px;
+    display: flex;
+}
+.class-swich input {
+    display: none;
+}
+.class-swich input:checked + label {
+    background: #325480;
+}
+
+.class-swich label {
+    height: 100%;
+    display: block;
+    padding: 9px;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+}
+
+.switch {
+    height: 100%;
+    width: 50%;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.class-form {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+     
+}
+
+.invisble {
+    visibility: hidden;
+    height: 36px;
+}
+
+
+.class-h2 {
+
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 29px;
+    margin-top: 75px;
+}
+
+.input {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 30px;
+    height: 44px;
+    background: #7C7C7C;
+    padding: 0 15px;
+    color: #FFFFFF;
+    border: none;
+
+}
+.input::placeholder {
+    color: #FFFFFF;
+}
+.class-check {
+    display: flex;
+}
+.class-check a {
+     margin-left: auto;
+     color: #FFFFFF;
+     font-size: 12px;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    color: #325480;
+    font-size: 12px;
+}
+
+
+/* 1. Приховуємо стандартний чекбокс */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* 2. Створюємо кастомний чекбокс (бордер) */
+.checkbox-border {
+  margin-right: 4px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #325480; /* Колір та товщина бордера */
+  border-radius: 2px; /* Заокруглення */
+  position: relative;
+}
+
+/* 4. Стиль для активного стану (checked) */
+.custom-checkbox input:checked + .checkbox-border {
+  background-color: #325480; /* Фон при відмітці */
+  border-color: #325480/* Бордер при відмітці */
+}
+
+/* 5. Галочка (прихована за замовчуванням) */
+.checkbox-border::after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 4px;
+  width: 3px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* 6. Показуємо галочку при checked */
+.custom-checkbox input:checked + .checkbox-border::after {
+  display: block;
+}
+
+
+
+.class-button {
+    width: 100%;
+    height: 44px;
+    border-radius: 30px;
+    background-color: #325480;
+    margin-top: 30px;
+    color: #FFFFFF;
+    font-size: 12px;
+    border: none;
+}
+
+.class-register {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+
+}
+
+.class-register span {
+    color: #325480;
+    margin-right: 33px;
+}
+.class-register a {
+    color: #FFFFFF;
+}
+.class-login {
+    color: #325480;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill:#325480
+}
+.social-list a {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.social-list li:first-child a {
+    padding-top: 1px;
+}
+.class-facebook {
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
