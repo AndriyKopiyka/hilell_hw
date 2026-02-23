@@ -9,6 +9,7 @@ body {
 }
 
 .heading {
+    line-height: 42px;
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 50px;
@@ -91,8 +92,8 @@ body {
 .class-window {
     position: absolute;
     left: 100%;
-     background: white;
-     display: none;
+    background: white;
+    display: none;
     top: 70%;
 }
 
@@ -125,6 +126,7 @@ body {
 
 
 .contacts {
+    display: block;
     margin-left: auto;
 }
 
@@ -134,6 +136,15 @@ body {
     align-items: center;
     height: 80px;
 }
+
+.logo {
+    width: 145px;
+    height: 31px;
+}
+
+ .menu-mobile {
+    display: none;
+ }
 
 header {
     border-bottom: 1px solid #ECECEC;
@@ -146,14 +157,11 @@ header {
 
 
 
-
-
-
 /* Regular customers section */
 
 
 .custom {
-    padding: 94px 0;
+    padding: 94px 15px;
 
 }
 
@@ -164,8 +172,8 @@ header {
     
 }
 
-.card-custom {
 
+.card-custom {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -272,6 +280,11 @@ header {
     padding-bottom: 30px;
     background-color: #2F303A;
 }
+.logo-footer {
+    width: 145px;
+    height: 31px;
+}
+
 
 .container-footer {
 
@@ -313,12 +326,12 @@ padding-bottom: 0px;
     background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
     background-size: cover;
     padding-top: 200px;
-   padding-bottom: 200px;
-   color: #FFFFFF;
+    padding-bottom: 200px;
+    color: #FFFFFF;
 }
 
 .title-h1 {
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
@@ -327,6 +340,7 @@ padding-bottom: 0px;
     font-weight: 900;
     font-size: 44px;
     text-transform: uppercase;
+    line-height: 60px;
 }
 
 .btn {
@@ -344,6 +358,13 @@ padding-bottom: 0px;
 
 
 /* Main page: Second section */
+
+.column {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    gap: 30px;
+}
 
 .column p {
     font-weight: 700;
@@ -396,15 +417,6 @@ padding-bottom: 0px;
 
 
 
-.column {
-    display: flex;
-    padding: 94px 0;
-    gap: 30px;
-}
-
-
-
-
 
 
 
@@ -414,19 +426,19 @@ padding-bottom: 0px;
 /* Main page: 3d section */
 
 .doing {
-    margin:0 auto;
+    text-align: center;
     margin-bottom: 50px;
-    width: 316px;
-    height: 42px;
+    line-height: 42px;
     font-weight: 700;
     font-size: 36px;
 }
 
 
 .pictures img {
+    max-width: 370px;
+    width: 30%;
 
-    width: 370px;
-    height: 294px;
+   
 }
 
 .pictures {
@@ -442,8 +454,14 @@ padding-bottom: 0px;
 /* Main page: 4th section */
 
 .card {
+    width: 22%;
+    max-width: 270px;
     background-color: #FFFFFF;
     border-radius: 4px;
+}
+
+.card img {
+    width: 100%;
 }
 
 .team {
@@ -470,8 +488,8 @@ padding-bottom: 0px;
 .foto-real {
     display: flex;
     justify-content: center;
-    padding-left: 215px;
-    padding-right: 215px;
+    padding-left: 15px;
+    padding-right: 15px;
     gap: 30px;
 
 }
@@ -490,6 +508,7 @@ padding-bottom: 0px;
     border: none;
     line-height: 26px;
     border-radius: 4px;
+    white-space: nowrap;
 }
 
 .btn-filter.active {
@@ -501,9 +520,10 @@ padding-bottom: 0px;
 .container-key {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 15px 8px;
     margin-top: 94px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .container-card {
@@ -560,6 +580,228 @@ padding-bottom: 0px;
     flex-wrap: wrap;
     gap: 30px;
     padding-bottom: 94px;
+    justify-content: center;
 }
 
 /* --- */
+
+/* CSS from 600px to 1024px */
+@media (max-width: 1024px) {
+    /* Шапка */
+    .header {
+        height: 60px;
+    }
+
+
+    .logo {
+        width: 134px;
+        height: 28px;
+    }
+
+    .menu,
+    .contacts {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 9px 0;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        margin-left: auto;
+    }
+
+    .menu-mobile:before,
+    .menu-mobile:after,
+    .menu-mobile span {
+        content: '';
+        width: 24px;
+        height: 2px;
+        background: #212121;
+    }
+
+    /* Main page: First section */
+
+    .title {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+
+    .title-h1 h1 {
+        font-size: 36px;
+        padding: 0 60px;
+        line-height: 54px;
+    }
+
+    /* Main page: Second section */
+
+    .column {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-column {
+       width: 40%;
+    }
+
+    .pictures {
+        flex-wrap: wrap;
+        padding: 0 30px 60px;
+
+
+    }
+    .pictures img {
+        width: 40%;
+    }
+
+.foto-real {
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 40%;
+    max-width: 450px;
+    
+}
+.container-custom {
+    display: none;
+}
+
+.social-list-wrapper {
+    display: none;
+}
+.container-footer {
+    justify-content: center;
+    text-align: center;
+    
+}
+.inform {
+    padding: 62px 0;
+}
+.container-key {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+.container-card{
+    width: 45%;
+    max-width: 450px;
+    
+}
+.portfolio-container {
+    padding-bottom: 58px;
+}
+
+
+
+}
+
+@media (max-width: 600px) {
+    /* Main page: First section */
+
+    .title {
+        background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg-mobile.jpg);
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
+    .title-h1 h1 {
+        font-size: 24px;
+        line-height: 42px;
+
+    }
+
+    /* Main page: Second section */
+
+    .column {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 15px;
+    }
+
+    .card-column {
+        width: 100%;
+    }
+
+/* Main page: 3d section */
+
+.doing {
+
+    line-height: 32px;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.pictures {
+
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+
+}
+.pictures img {
+    max-width: 370px;
+    width: 100%;
+    
+}
+.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.heading {
+    line-height: 33px;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.foto-real {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+
+}
+.card {
+    width: 100%;
+    max-width: 450px;
+    
+}
+.container-key {
+        justify-content: flex-start;
+
+}
+
+.container-card {
+    width: 100%;
+    max-width: 450px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* --- */
+
+
+
+}
