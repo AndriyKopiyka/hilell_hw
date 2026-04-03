@@ -1,0 +1,640 @@
+/* hero */
+
+.hero {
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100vh;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(/img/header-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* advantages  */
+
+.advantages {
+    overflow: hidden;
+}
+
+.btn-list {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    overflow: auto;
+
+}
+
+.btn-list button {
+    border: none;
+    background: none;
+    color: var(--color-grey-text);
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.btn-list button:hover {
+    color: var(--accent-color);
+}
+
+.btn-list button.active {
+    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.legal-services {
+    padding: 34px 30px 30px;
+
+}
+
+.separator {
+    display: block;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 30px;
+
+}
+
+.legal-services h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.legal-services p {
+    font-weight: 400;
+    font-size: 19px;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+
+/* services */
+
+.services {
+    position: relative;
+    padding: 0 30px 60px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.services::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    background: rgba(202, 202, 219, 1);
+    border-radius: 0 0 12px 12px;
+    left: 20px;
+    right: 20px;
+    bottom: -10px;
+}
+
+.services::before {
+    content: '';
+    height: 10px;
+    position: absolute;
+    bottom: -20px;
+    right: 40px;
+    left: 40px;
+    background: rgba(231, 231, 242, 1);
+    border-radius: 0 0 12px 12px;
+
+}
+
+.services-title {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+
+.services-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.services-card-img-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 24px;
+    width: 92px;
+    height: 92px;
+
+}
+
+.services-card-title {
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--active-color-regular);
+}
+
+.services-card-text {
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* section team  */
+
+.team {
+    padding: 50px 30px 60px;
+
+}
+
+.team-card {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.team-photo {
+    background-image: url("/img/team-olex.jpg");
+    background-position: center;
+    height: 500px;
+
+}
+
+.team-text {
+    padding: 30px;
+    background: var(--color-grey-bg);
+}
+
+.team-title {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.team-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-grey-text);
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+
+.team-position {
+    color: var(--color-grey-text);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.team-btn-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team-btn {
+    width: 16px;
+    height: 16px;
+    background-color: var(--active-color-regular);
+    border-radius: 100%;
+    border: none;
+    opacity: 20%;
+}
+
+.team-btn.active,
+.team-btn:active {
+    opacity: 100%;
+}
+
+.team-btn:not(.active):hover {
+    opacity: 60%;
+}
+
+
+/* clients */
+
+.clients-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--main-color);
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.clients-wrapper div {
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hillel {
+    display: flex;
+    background: rgba(28, 66, 128, 1);
+}
+
+.wanna-biz {
+    display: flex;
+    background: rgba(20, 54, 70, 1);
+}
+
+.tapgerine {
+    background: #F48B30;
+    display: flex;
+
+}
+
+.dlook {
+    display: flex;
+    background: rgba(158, 77, 195, 1);
+}
+
+.orangear {
+    display: flex;
+    background: rgba(253, 147, 57, 1);
+}
+
+.adtelligent {
+    display: flex;
+    background: rgba(226, 226, 228, 1);
+}
+
+.clickky {
+    background: rgba(199, 28, 54, 1);
+    display: none;
+}
+
+.eco {
+    background: rgba(220, 243, 249, 1);
+    display: none;
+}
+
+.infratek {
+    background: rgba(234, 234, 234, 1);
+    display: none;
+}
+
+.city {
+    background: rgba(40, 34, 64, 1);
+    display: none;
+}
+
+.artprint {
+    background: rgba(29, 69, 104, 1);
+    display: none;
+}
+
+.ultimate {
+    background: rgba(0, 0, 0, 1);
+    display: none;
+}
+
+
+/* publications */
+
+
+.publications {
+    background-color: var(--color-grey-bg);
+    padding: 30px;
+}
+
+.publications-container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.publications-link {
+    margin-bottom: 5px;
+}
+
+.publications-name {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.publications-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.publications-card {
+    max-width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.publications-card-img {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+
+.publications-img-april {
+    background-image: url(/img/publication-april.jpg);
+}
+
+.publications-img-september {
+    background-image: url(/img/publication-september.jpg);
+}
+
+.publications-img-august {
+    background-image: url(/img/publication-august.jpg);
+}
+
+.publications-text-wrapper {
+    padding: 30px;
+}
+
+.publications-text {
+    margin-bottom: 15px;
+    color: var(--active-color-regular);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.publications-months {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--color-grey-text);
+    letter-spacing: 1px;
+}
+
+.publications-description {
+    border-top: 4px solid var(--color-grey-separator);
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+@media (min-width: 768px) {
+    /* hero */
+
+    .hero {
+        padding: 50px 60px 30px;
+    }
+
+    /* advantages */
+    .btn-list {
+        padding: 60px;
+    }
+
+    .btn-list button {
+        font-size: 38px;
+    }
+
+    .legal-services {
+        padding: 64px 60px 60px;
+    }
+
+    .legal-services h2 {
+        font-size: 30px;
+    }
+
+    .separator {
+        margin: 0 60px;
+    }
+
+    .services {
+        padding: 0 60px 60px;
+
+    }
+
+    .services-title {
+        font-size: 38px;
+        margin-bottom: 60px;
+
+    }
+
+    .services-card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .services-card {
+        width: calc(50% - 30px);
+    }
+
+    /* team */
+    .team {
+        padding: 80px 60px 60px;
+
+    }
+
+    .team-title {
+        font-size: 38px;
+    }
+
+    .team-card {
+        max-width: 648px;
+
+    }
+
+    .team-photo {
+        background-image: url(/img/team-olex-wide.jpg);
+    }
+
+    /* clients */
+    .clients-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .clients-wrapper div {
+        width: 33.33%;
+    }
+
+    .clickky {
+        display: flex;
+    }
+
+    .eco {
+        display: flex;
+    }
+
+    .infratek {
+        display: flex;
+    }
+
+    .city {
+        display: flex;
+    }
+
+    .artprint {
+        display: flex;
+    }
+
+    .ultimate {
+        display: flex;
+    }
+
+
+    /* publications */
+    .publications {
+        padding: 30px 60px;
+    }
+
+    .publications-link {
+        margin-bottom: 10px;
+    }
+
+    .publications-name {
+        font-size: 38px;
+    }
+
+    .publications-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .publications-card {
+        width: calc(50% - 15px);
+    }
+
+    .publications-card:last-child {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .advantages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        padding: 60px;
+
+    }
+
+    .btn-list {
+        flex-direction: column;
+        align-items: flex-end;
+        overflow: visible;
+        padding: 0;
+    }
+
+    .separator {
+        align-self: stretch;
+        margin: 0;
+        width: 4px;
+        height: auto;
+        flex: none;
+
+    }
+
+    .legal-services {
+        padding: 0;
+        width: 405px;
+    }
+
+    .services-card {
+        width: calc(33% - 40px);
+    }
+
+    /* team */
+    .team-card {
+        display: flex;
+        max-width: none;
+
+    }
+
+    .team-photo {
+        background-image: url(/img/team-olex-528.jpg);
+        width: 400px;
+        flex: none;
+        height: 528px;
+    }
+
+    /* clients  */
+    .clients-wrapper div {
+        width: 25%;
+    }
+
+
+    /* publications */
+    .publications-card,
+    .publications-card:last-child {
+        width: calc(33.33% - 20px);
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .legal-services {
+        width: 580px;
+    }
+
+    .team-photo {
+        height: 344px;
+        background-image: url(/img/team-olex-344.jpg);
+    }
+
+    .team-card {
+        max-width: 1600px;
+    }
+
+    .clients-wrapper {
+        margin: 0 auto;
+        max-width: 1720px;
+    }
+}
+
+@media (min-width: 1720px) {
+    .clients-wrapper {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .clients {
+        padding-bottom: 60px;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .hero {
+        padding: 50px 160px 30px;
+    }
+
+    .legal-services {
+        width: 860px;
+    }
+
+    .services {
+        padding: 60px 160px;
+    }
+
+    .team-card {
+        height: 298px;
+    }
+}
