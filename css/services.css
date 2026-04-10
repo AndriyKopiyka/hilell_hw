@@ -1,0 +1,266 @@
+/* services */
+
+.ecommerce {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 30px;
+}
+
+.ecommerce-img {
+    margin: 0 auto;
+    width: 92px;
+    height: 92px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF
+}
+
+.ecommerce-title {
+    margin: 30px 0;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.ecommerce-text:first-of-type {
+    margin-bottom: 20px;
+}
+
+.ecommerce-text {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.ecommerce-btn {
+    display: block;
+    width: 208px;
+    line-height: 56px;
+    background-color: var(--active-color-regular);
+    border-radius: 12px;
+    border: none;
+    margin: 30px auto 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.ecommerce-btn:hover {
+    background-color: var(--active-color-hover);
+}
+
+
+
+/* .services-section  */
+
+.services-section {
+    padding: 0 30px 60px;
+}
+
+.services-section-separator {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+.services-section-title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.services-section-list {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: disc;
+}
+
+.services-list-item {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.services-list-item::marker {
+    color: var(--accent-color);
+}
+
+
+
+
+/* publications */
+
+
+.publications {
+    margin-top: 80px;
+    background-color: var(--color-grey-bg);
+    padding: 30px;
+}
+
+.publications-container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.publications-link {
+    margin-bottom: 5px;
+}
+
+.publications-name {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.publications-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.publications-card {
+    max-width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.publications-card-img {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+}
+
+.publications-img-april {
+    background-image: url(/img/publication-april.jpg);
+}
+
+.publications-img-september {
+    background-image: url(/img/publication-september.jpg);
+}
+
+.publications-img-august {
+    background-image: url(/img/publication-august.jpg);
+}
+
+.publications-text-wrapper {
+    padding: 30px;
+}
+
+.publications-text {
+    margin-bottom: 15px;
+    color: var(--active-color-regular);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.publications-months {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--color-grey-text);
+    letter-spacing: 1px;
+}
+
+.publications-description {
+    border-top: 4px solid var(--color-grey-separator);
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+     .ecommerce {
+        padding: 60px;
+    }
+
+    .ecommerce-title {
+        font-size: 38px;
+    }
+
+    .services-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 60px 60px;
+    }
+
+    .services-section-list {
+        columns: 2;
+        display: block;
+        column-gap: 60px;
+     }
+
+    .services-list-item {
+        margin-bottom: 15px;
+    }
+
+
+
+     /* publications */
+    .publications {
+        padding: 30px 60px;
+    }
+
+    .publications-link {
+        margin-bottom: 10px;
+    }
+
+    .publications-name {
+        font-size: 38px;
+    }
+
+    .publications-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .publications-card {
+        width: calc(50% - 15px);
+    }
+
+    .publications-card:last-child {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    
+    /* publications */
+    .publications-card,
+    .publications-card:last-child {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (min-width: 1920px) {
+    .ecommerce,
+    .services-section {
+        max-width: 1480px;
+    }
+}

@@ -24,9 +24,31 @@ body {
 }
 
 .wrapper-gradient {
+    position: relative;
     background: var(--gradient-supersoft);
     border-radius: 0 0 12px 12px;
+}
 
+.wrapper-gradient::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    background: rgba(202, 202, 219, 1);
+    border-radius: 0 0 12px 12px;
+    left: 20px;
+    right: 20px;
+    bottom: -10px;
+}
+
+.wrapper-gradient::before {
+    content: '';
+    height: 10px;
+    position: absolute;
+    bottom: -20px;
+    right: 40px;
+    left: 40px;
+    background: rgba(231, 231, 242, 1);
+    border-radius: 0 0 12px 12px;
 }
 
 .text-gradient {
@@ -218,44 +240,6 @@ body {
     text-decoration: underline;
 }
 
-h1 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 110%;
-    color: white;
-    width: 315px;
-    margin: 0 auto;
-}
-
-.header-btn {
-    width: 42px;
-    height: 42px;
-    border-radius: 100%;
-    background: none;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    display: block;
-    margin: 0 auto;
-}
-
-.header-btn:hover {
-    border-color: var(--accent-color);
-}
-
-.header-btn:after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    transform: rotate(45deg); /*Повертає на 45 градусів для ефекту галочки */
-    display: inline-block;
-}
-
-.header-btn:hover:after {
-    border-color: var(--accent-color);
-}
-
 
 .mobile-panel {
     display: flex;
@@ -330,6 +314,11 @@ h1 {
 .mobile-navlink.active {
     color: var(--accent-color);
 }
+
+
+
+
+   
 
 /* FOOTER */
 
@@ -407,6 +396,10 @@ footer {
 
 @media (min-width: 768px) {
     /*HEADER*/
+
+    header {
+        padding: 50px 60px 0;
+    }
 
     .header-address {
         display: flex;
@@ -544,7 +537,7 @@ footer {
     .logo-wrapper {
         position: absolute;
         margin-top: 0;
-        top: 0;
+        top: 50px;
     }
 
     .desktop-menu {
@@ -559,4 +552,13 @@ footer {
         margin: 0 auto;
         max-width: 1600px;
     }
+}
+
+@media (min-width: 1920px) {
+
+     header {
+        padding: 50px 160px 0;
+    }
+
+    
 }
