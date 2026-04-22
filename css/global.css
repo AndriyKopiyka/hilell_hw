@@ -116,7 +116,6 @@ body {
 .language button:not(.active):hover {
     background: #fff;
     color: var(--accent-color);
-
 }
 
 .language .active {
@@ -181,12 +180,26 @@ body {
     display: flex;
     padding: 12px 15px;
     align-items: center;
+}
 
+.logo-img-wrapper {
+    display: flex;
 }
 
 .header-logo {
     width: 70px;
     height: 32px;
+}
+
+.logo-slash {
+    margin: 0 4px;
+    width: 12px;
+    height: 26px;
+}
+
+.logo-text {
+    font-size: 20px;
+    color: var(--main-color);
 }
 
 .burger-menu {
@@ -238,6 +251,9 @@ body {
 .nav-link:hover {
     color: var(--active-color-hover);
     text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+
 }
 
 
@@ -318,7 +334,7 @@ body {
 
 
 
-   
+
 
 /* FOOTER */
 
@@ -417,7 +433,15 @@ footer {
     .logo-wrapper {
         padding: 0;
         margin-top: 30px;
+    }
 
+    .logo-slash {
+        width: 21px;
+        height: 47px;
+    }
+
+    .logo-text {
+        font-size: 36px;
     }
 
     .header-logo {
@@ -432,6 +456,10 @@ footer {
     .header-facebook {
         color: white;
         display: flex;
+    }
+
+    .header-facebook:hover {
+        color: var(--accent-color);
     }
 
     .desktop-menu {
@@ -556,9 +584,9 @@ footer {
 
 @media (min-width: 1920px) {
 
-     header {
+    header {
         padding: 50px 160px 0;
     }
 
-    
+
 }
