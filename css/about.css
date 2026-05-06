@@ -1,26 +1,4 @@
-    /* HEADER  */
 
-    .language-wrapper {
-        background-color: var(--color-grey-bg);
-    }
-
-    .language button:not(.active) {
-        color: var(--color-grey-text);
-    }
-
-    .language button:not(.active):hover {
-        background: var(--color-grey-bg);
-    }
-
-    .header-tel {
-        color: var(--color-grey-text);
-    }
-
-    .burger-menu::before,
-    .burger-menu::after,
-    .burger-menu span {
-        background-color: var(--main-color);
-    }
 
     .section-main {
         padding: 30px;
@@ -205,27 +183,6 @@
 
 
     @media (min-width: 768px) {
-
-        /* HEADER  */
-
-        .language-wrapper {
-            background: none;
-        }
-
-        .header-facebook {
-            color: var(--color-grey-text);
-        }
-
-
-        .nav-link {
-            color: var(--active-color-regular);
-        }
-
-        .nav-link:hover {
-            color: var(--accent-color);
-        }
-
-
 
 
         /* section-main */

@@ -1,0 +1,168 @@
+@import url(header-white.css);
+
+
+.contact-container {
+    padding: 30px;
+}
+
+.address-contact {
+    font-size: 21px;
+    line-height: 30px;
+    color: rgba(50, 50, 100, 1);
+}
+
+.address-border {
+    margin: 30px 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-grey-separator);
+}
+
+.address-namber {
+    display: block;
+    color: #46466E;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.address-Link {
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--active-color-regular);
+    text-decoration: none;
+}
+
+.address-facebook {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--active-color-regular);
+}
+
+.address-facebook:hover {
+    color: var(--accent-color);
+}
+
+.address-page {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.form-container {
+    margin-top: 30px;
+    background-color: var(--color-grey-bg);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.form-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.form-input {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    height: 56px;
+}
+
+.form-input:focus {
+    border: 2px solid var(--active-color-regular);
+    outline: none;
+}
+
+.form-message {
+    padding-top: 15px;
+    height: 130px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-text {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-grey-text);
+    margin-bottom: 15px;
+}
+
+.form-btn {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    height: 56px;
+    border-radius: 12px;
+    background-color: var(--active-color-regular);
+    border: none;
+    color: #FFFFFF;
+}
+
+.form-btn:hover {
+    background-color: var(--active-color-hover);
+}
+
+.form-btn:active {
+    background-color: var(--active-color-active);
+}
+
+.form-input::placeholder {
+    color: var(--color-grey-text);
+}
+
+
+
+@media (min-width: 768px) {
+
+    .contact-container {
+        padding: 60px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+    .contact-container {
+        margin: 0 auto;
+        max-width: 1080px;
+        padding: 60px 0;
+        display: flex;
+        gap: 60px;
+    }
+
+    .address-container {
+        width: calc(50% - 30px);
+    }
+
+    .form-container {
+        margin-top: 0;
+        width: calc(50% - 30px);
+    }
+
+}
+
+@media (min-width: 1760px)  {
+
+    .contact-container {
+        max-width: 1360px;
+    }
+
+}
